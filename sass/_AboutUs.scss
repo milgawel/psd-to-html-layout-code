@@ -1,0 +1,71 @@
+div.aboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  h1.aboutUs__title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    height: 2px;
+    width: 40px;
+    background: rgb(248, 59, 59);
+    left: 50%;
+    z-index: 1;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  div.aboutUs__content {
+    margin: 20px auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+    div.aboutUs__content__card {
+      width: 28%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 150px 150px;
+      background-position: 50% 20%;
+
+      img {
+        margin: 60px auto 0;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+      }
+      h2.aboutUs__content__card__title {
+        margin-top: 25px;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+      }
+      p.aboutUs__content__card__text {
+        width: 100%;
+        text-align: center;
+        margin: 13px auto 0;
+        font-size: 0.9em;
+        font-weight: 300;
+      }
+    }
+    div.aboutUs__content__card::after {
+      content: "";
+      background: url("../images/Pattern_horizontal.png");
+      opacity: 0.3;
+      top: 0%;
+      left: 20%;
+      bottom: 20%;
+      right: 20%;
+      background-size: 150% 150%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}

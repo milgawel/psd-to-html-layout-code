@@ -2,35 +2,33 @@ div.navigation {
   position: sticky;
   top: 0;
   width: 100%;
-  max-width: 1200px;
-  height: 60px;
+  // max-width: 1200px;
+  height: 70px;
   display: flex;
   margin: 0 auto;
   background-color: white;
   z-index: 999;
-  padding: 0 15%;
+  padding: 0 18%;
 
   a.logo {
     display: block;
     height: 100%;
-    margin: auto 0;
 
     img {
       margin: 15px 0 15px 0;
-      height: 30px;
+      height: 40px;
     }
   }
 
   ul.navigation__list__desktop {
     position: relative;
-
     list-style: none;
-    width: 55%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 25px;
+    padding: 0 30px;
     margin-left: auto;
 
     li.navigation__list__item {
@@ -39,12 +37,12 @@ div.navigation {
       padding: 30px 0;
       a.navigation__list__item__link {
         display: block;
-        transform: translateY(-40%);
+        transform: translateY(-20%);
         margin: auto 0;
-        height: 23px;
+        height: 28px;
         text-decoration: none;
-        font-size: 10px;
-        font-weight: 700;
+        font-size: 13px;
+        font-weight: 500;
         border: 3px solid transparent;
         border-left: none;
         border-right: none;
@@ -53,25 +51,25 @@ div.navigation {
 
       @keyframes borderHover {
         0% {
-          border-bottom: 0px solid royalblue;
+          border-bottom: 0px solid rgb(80, 124, 255);
         }
         100% {
-          border-bottom: 2px solid royalblue;
+          border-bottom: 2px solid rgb(80, 124, 255);
         }
       }
       a:hover {
-        animation: borderHover 0.2s forwards;
+        animation: borderHover 0.1s forwards;
       }
     }
   }
   a.loginButton {
     margin-left: auto;
     display: block;
-    width: 90px;
-    height: 30px;
-    line-height: 30px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: auto;
     margin-bottom: auto;
     background-color: rgba(255, 27, 84, 0.952);
