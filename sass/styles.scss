@@ -11,10 +11,17 @@ html {
 div.wrapper {
   width: 100vw;
   margin: 0 auto;
-  min-height: 300vh;
+  // min-height: 500vh;
+  overflow-y: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 
 @import "./Navigation";
 @import "./Header";
 @import "./AboutUs";
 @import "./Contact";
+@import "./Partners";
+@import "./Footer";
+@import "./Scrollbar";
