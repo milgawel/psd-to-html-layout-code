@@ -1,0 +1,41 @@
+div.header {
+  width: 100%;
+  height: 500px;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+  }
+
+  div.header__container {
+    position: absolute;
+    width: 650px;
+    height: 150px;
+    // border: 2px solid yellow;
+    margin-left: 20%;
+    position: absolute;
+    bottom: 120px;
+
+    h1.header__container__title {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    p.header__container__content {
+      font-size: 0.8em;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    button.header__container__button {
+      width: 120px;
+      height: 35px;
+      background-color: rgba(255, 27, 84, 0.952);
+      border-radius: 5px;
+      border: none;
+      color: white;
+    }
+  }
+}
