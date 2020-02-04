@@ -88,8 +88,57 @@
       </div>
 
       <!-- ### "Write Us" CONTACT PANEL -->
+      <div class="contact">
+        <h1 class="contact__title">Write Us</h1>
 
-      <!-- <div className=""></div> -->
+        <form action="" class="contact__form">
+          <h2 class="contact__description">Potrzebujesz pomocy z projektem?</h2>
+          <p class="contact__text">
+            Napisz do nas, jesteśmy profesjonalistami w temacie programowania,
+            consultingu i audytu IT
+          </p>
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" placeholder="Jan Kowalski" />
+          <label for="email">Adres e-mail</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="jan.kowalski@mojafirma.pl"
+          />
+          <label for="phone">Numer telefonu</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="+48 285 285 687"
+          />
+          <label for="title">Temat</label>
+          <select name="title" id="title">
+            <option value="consulting">Consulting</option>
+            <option value="development">Development</option>
+            <option value="audyt">Audyt</option>
+          </select>
+          <label for="content">Treść</label>
+
+          <textarea
+            id="content"
+            name="content"
+            rows="5"
+            cols="30"
+            placeholder="Tutaj wpisz treść wiadomości..."
+          ></textarea>
+
+          <div class="form__checkbox">
+            <input type="checkbox" class="form__checkbox checked" checked />
+            Wysyłając wiadomość zgadzasz się na przekazanie nam Twoich danych
+            osobowych
+            <br />
+          </div>
+
+          <button class="form__submit">Wyślij</button>
+        </form>
+      </div>
       <!-- ### Trusted Us Companies CONTAINER ### -->
 
       <!-- ### FOOTER ### -->
