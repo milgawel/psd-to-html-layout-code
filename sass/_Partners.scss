@@ -60,3 +60,9 @@ div.partners {
     }
   }
 }
+
+@media (max-width: 768px) {
+  div.partners {
+    display: none;
+  }
+}

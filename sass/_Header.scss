@@ -13,16 +13,16 @@ div.header {
   div.header__container {
     position: absolute;
     width: 650px;
-    height: 150px;
+    min-height: 150px;
     margin-left: 20%;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 
     h1.header__container__title {
       font-size: 1.5em;
       font-weight: 500;
       margin-bottom: 10px;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 1);
     }
     p.header__container__content {
       font-size: 0.8em;
@@ -38,6 +38,67 @@ div.header {
       border: none;
       color: white;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  div.header {
+    div.header__container {
+      margin-left: 12%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  div.header {
+    background-image: url("../images/tablet_banner_photo.png");
+    height: 450px;
+
+    div.header__container {
+      width: 92%;
+      margin-left: 3%;
+
+      h1.header__container__title {
+        font-size: 1.9em;
+        margin-bottom: 14px;
+      }
+      p.header__container__content {
+        line-height: 1.5em;
+        font-size: 0.95em;
+
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      button.header__container__button {
+        width: 110px;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  div.header {
+    background-image: url("../images/phone_banner_photo.png");
+    height: 300px;
+
+    div.header__container {
+      padding: 0 5px;
+      h1.header__container__title {
+        font-size: 1.55em;
+      }
+      p.header__container__content {
+        font-size: 0.85em;
+        margin-bottom: 10px;
+      }
+      button.header__container__button {
+        width: 120px;
+        height: 40px;
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
     }
   }
 }
