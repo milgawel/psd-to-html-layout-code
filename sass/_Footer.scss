@@ -16,7 +16,6 @@ div.footer {
       height: 13px;
     }
   }
-  // border: 2px solid purple;
   ul.footer__list {
     list-style: none;
     width: 50%;
@@ -46,7 +45,7 @@ div.footer {
     flex-direction: row;
     a.footer__button__socialMedia {
       display: block;
-      margin: -10px 0 0 15px;
+      margin: -10px 0 15px 0;
       width: 20px;
       height: 20px;
     }
@@ -88,8 +87,6 @@ div.privacyRules {
   }
 }
 
-// ############################################## 420
-
 @media (max-width: 420px) {
   div.footer {
     width: 85%;
@@ -112,7 +109,7 @@ div.privacyRules {
     }
 
     ul.footer__list {
-      margin: 20px auto;
+      margin: 20px auto 0;
       width: 50%;
 
       flex-direction: column;
@@ -128,16 +125,19 @@ div.privacyRules {
       }
     }
     div.footer__socialMedia {
-      border: 2px solid red;
       justify-content: center;
-      display: flex;
-      flex-direction: row;
-      margin: 0;
+      a.footer__button__socialMedia {
+        display: block;
+        margin: 0 10px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
   div.privacyRules {
     width: 100%;
+    margin-top: 15px;
 
     p.privacyRules__text {
       font-size: 0.7em;
