@@ -14,7 +14,7 @@
   <body>
     <div class="wrapper">
       <!-- ### NAVIGATION ### -->
-      <div class="navigation">
+      <header class="navigation">
         <a href="#" class="logo"
           ><img src="./images/Logo - black.png" alt=""
         /></a>
@@ -40,21 +40,21 @@
         <button class="navigation__mobile">
           <img src="./images/icon_hamburger.png" alt="" />
         </button>
-      </div>
+      </header>
 
-      <!-- ### HEADER ### -->
+      <!-- ### PHOTO CONTAINER ### -->
 
-      <div class="header">
-        <div class="header__container">
-          <h1 class="header__container__title">
+      <div class="container__wrapper">
+        <div class="container">
+          <h1 class="container__title">
             Angular House is part of ValueAd company
           </h1>
-          <p class="header__container__content">
+          <p class="container__content">
             Over 92% of computers are infected with Adware and spyware. Such
             software is rarely accompanied by uninstall utility and even when it
             is it almost always leaves broken Windows Registry keys behind it.
           </p>
-          <button class="header__container__button">Write Us</button>
+          <button class="container__button">Write Us</button>
         </div>
       </div>
 
@@ -90,7 +90,7 @@
         </div>
       </div>
 
-      <!-- ### "Write Us" CONTACT PANEL -->
+      <!-- ### CONTACT PANEL -->
       <div class="contact">
         <h1 class="contact__title">Write Us</h1>
 
@@ -100,29 +100,37 @@
             Napisz do nas, jesteśmy profesjonalistami w temacie programowania,
             consultingu i audytu IT
           </p>
-          <label for="name">Imię i nazwisko</label>
-          <input type="text" id="name" name="name" placeholder="Jan Kowalski" />
-          <label for="email">Adres e-mail</label>
+          <label for="name" class="contact__label">Imię i nazwisko</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jan Kowalski"
+            class="contact__input"
+          />
+          <label for="email" class="contact__label">Adres e-mail</label>
           <input
             type="text"
             id="email"
             name="email"
             placeholder="jan.kowalski@mojafirma.pl"
+            class="contact__input"
           />
-          <label for="phone">Numer telefonu</label>
+          <label for="phone" class="contact__label">Numer telefonu</label>
           <input
             type="text"
             id="phone"
             name="phone"
             placeholder="+48 285 285 687"
+            class="contact__input"
           />
-          <label for="title">Temat</label>
-          <select name="title" id="title">
+          <label for="title" class="contact__label">Temat</label>
+          <select name="title" id="title" class="contact__select">
             <option value="consulting">Consulting</option>
             <option value="development">Development</option>
             <option value="audyt">Audyt</option>
           </select>
-          <label for="content">Treść</label>
+          <label for="content" class="contact__label">Treść</label>
 
           <textarea
             id="content"
@@ -130,13 +138,13 @@
             rows="5"
             cols="30"
             placeholder="Tutaj wpisz treść wiadomości..."
+            class="contact__textarea"
           ></textarea>
 
           <div class="form__checkbox">
             <input type="checkbox" class="form__checkbox checked" checked />
             Wysyłając wiadomość zgadzasz się na przekazanie nam Twoich danych
             osobowych
-            <br />
           </div>
 
           <button class="form__submit">Wyślij</button>
@@ -197,7 +205,7 @@
         </div>
       </div>
       <!-- ### FOOTER ### -->
-      <div class="footer">
+      <footer class="footer">
         <a href="#" class="footer__logo"
           ><img src="./images/HouseofAngular.svg" alt=""
         /></a>
@@ -226,7 +234,7 @@
             ><img src="./images/github-sign.png" alt=""
           /></a>
         </div>
-      </div>
+      </footer>
       <div class="privacyRules">
         <p class="privacyRules__text">
           Copyright &#9400; 2013-2019 ValueAdd. All rights reserved.

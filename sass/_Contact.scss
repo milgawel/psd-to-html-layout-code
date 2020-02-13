@@ -40,23 +40,23 @@ div.contact {
       font-weight: 300;
       font-size: 0.8em;
     }
-    label {
+    label.contact__label {
       margin: 25px 0 5px;
       font-size: 0.8em;
       font-weight: 500;
     }
-    input {
+    input.contact__input {
       height: 30px;
       font-size: 0.8em;
       padding-left: 10px;
       border: 1px solid rgb(221, 215, 215);
     }
-    select {
+    select.contact__select {
       height: 30px;
       padding-left: 10px;
       border: 1px solid rgb(221, 215, 215);
     }
-    textarea {
+    textarea.contact__textarea {
       padding: 10px;
       resize: none;
     }

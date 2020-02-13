@@ -1,4 +1,4 @@
-div.footer {
+footer.footer {
   width: 60%;
   margin: 60px auto 0;
   display: flex;
@@ -66,7 +66,7 @@ div.privacyRules {
 }
 
 @media (max-width: 768px) {
-  div.footer {
+  footer.footer {
     width: 93%;
     ul.footer__list {
       width: 55%;
@@ -89,7 +89,7 @@ div.privacyRules {
 }
 
 @media (max-width: 420px) {
-  div.footer {
+  footer.footer {
     width: 85%;
     margin: 40px auto 0;
     display: flex;
